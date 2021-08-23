@@ -4,8 +4,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: src/hooks/useWindowSize.js,
-            test: src/components/layout.js,
+            test: @netlify/plugin-gatsby,
             use: loaders.null(),
           },
         ],
